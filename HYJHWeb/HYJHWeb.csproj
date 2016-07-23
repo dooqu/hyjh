@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8DAF822A-A16E-4AC9-B8AD-17324947A1E1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HYJHWeb</RootNamespace>
+    <AssemblyName>HYJHWeb</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="customCreate.aspx" />
+    <Content Include="customEdit.aspx" />
+    <Content Include="customList.aspx" />
+    <Content Include="DepartmentManager.aspx" />
+    <Content Include="detail.aspx" />
+    <Content Include="doEditOrDelete.aspx" />
+    <Content Include="getHouseInfo.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="houseCreate.aspx" />
+    <Content Include="houseEdit.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="logoff.aspx" />
+    <Content Include="noinfo.jpg" />
+    <Content Include="RecvUploadFile.aspx" />
+    <Content Include="roleManager.aspx" />
+    <Content Include="test.aspx" />
+    <Content Include="userManager.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="api\APICreateCustom.ashx.cs">
+      <DependentUpon>APICreateCustom.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\APICreateHouseInfo.ashx.cs">
+      <DependentUpon>APICreateHouseInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\APICustomList.ashx.cs">
+      <DependentUpon>APICustomList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\APIDeleteHouseInfo.ashx.cs">
+      <DependentUpon>APIDeleteHouseInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\APIDeletePicture.ashx.cs">
+      <DependentUpon>APIDeletePicture.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\APIGetHouseInfo.ashx.cs">
+      <DependentUpon>APIGetHouseInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\APIGetVisitList.ashx.cs">
+      <DependentUpon>APIGetVisitList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\APIHouseList.ashx.cs">
+      <DependentUpon>APIHouseList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\APILogin.ashx.cs">
+      <DependentUpon>APILogin.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\APIRecvUploadImage.ashx.cs">
+      <DependentUpon>APIRecvUploadImage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\APIUpdateHouseInfo.ashx.cs">
+      <DependentUpon>APIUpdateHouseInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\APIUpdateUserPassword.ashx.cs">
+      <DependentUpon>APIUpdateUserPassword.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\APIVisitHouseInfo.ashx.cs">
+      <DependentUpon>APIVisitHouseInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\BaseHandler.cs" />
+    <Compile Include="api\getSelectDataList.ashx.cs">
+      <DependentUpon>getSelectDataList.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="api\getTicket.ashx.cs">
+      <DependentUpon>getTicket.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="customCreate.aspx.cs">
+      <DependentUpon>customCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customCreate.aspx.designer.cs">
+      <DependentUpon>customCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customEdit.aspx.cs">
+      <DependentUpon>customEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customEdit.aspx.designer.cs">
+      <DependentUpon>customEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customList.aspx.cs">
+      <DependentUpon>customList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customList.aspx.designer.cs">
+      <DependentUpon>customList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentManager.aspx.cs">
+      <DependentUpon>DepartmentManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DepartmentManager.aspx.designer.cs">
+      <DependentUpon>DepartmentManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="detail.aspx.cs">
+      <DependentUpon>detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="detail.aspx.designer.cs">
+      <DependentUpon>detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="doEditOrDelete.aspx.cs">
+      <DependentUpon>doEditOrDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="doEditOrDelete.aspx.designer.cs">
+      <DependentUpon>doEditOrDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="getHouseInfo.aspx.cs">
+      <DependentUpon>getHouseInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="getHouseInfo.aspx.designer.cs">
+      <DependentUpon>getHouseInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="houseCreate.aspx.cs">
+      <DependentUpon>houseCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="houseCreate.aspx.designer.cs">
+      <DependentUpon>houseCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="houseEdit.aspx.cs">
+      <DependentUpon>houseEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="houseEdit.aspx.designer.cs">
+      <DependentUpon>houseEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginHandler.ashx.cs">
+      <DependentUpon>loginHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="logoff.aspx.cs">
+      <DependentUpon>logoff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logoff.aspx.designer.cs">
+      <DependentUpon>logoff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="recvUploadFile.aspx.cs">
+      <DependentUpon>RecvUploadFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="recvUploadFile.aspx.designer.cs">
+      <DependentUpon>RecvUploadFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="roleManager.aspx.cs">
+      <DependentUpon>roleManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="roleManager.aspx.designer.cs">
+      <DependentUpon>roleManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userManager.aspx.cs">
+      <DependentUpon>userManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userManager.aspx.designer.cs">
+      <DependentUpon>userManager.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="loginHandler.ashx" />
+    <Content Include="api\APICreateCustom.ashx" />
+    <Content Include="api\APICreateHouseInfo.ashx" />
+    <Content Include="api\APICustomList.ashx" />
+    <Content Include="api\APIDeleteHouseInfo.ashx" />
+    <Content Include="api\APIDeletePicture.ashx" />
+    <Content Include="api\APIGetHouseInfo.ashx" />
+    <Content Include="api\APIGetVisitList.ashx" />
+    <Content Include="api\APIHouseList.ashx" />
+    <Content Include="api\APILogin.ashx" />
+    <Content Include="api\APIRecvUploadImage.ashx" />
+    <Content Include="api\APIUpdateHouseInfo.ashx" />
+    <Content Include="api\APIUpdateUserPassword.ashx" />
+    <Content Include="api\getSelectDataList.ashx" />
+    <Content Include="api\getTicket.ashx" />
+    <Content Include="api\APIVisitHouseInfo.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HYJHLibrary\HYJHLibrary.csproj">
+      <Project>{615aaed4-8099-4d25-b0ac-08299013b769}</Project>
+      <Name>HYJHLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57525</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57525/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

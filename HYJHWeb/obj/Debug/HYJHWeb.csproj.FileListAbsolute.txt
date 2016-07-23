@@ -1,0 +1,8 @@
+F:\技术项目\HYJH\HYJHWeb\bin\HYJHWeb.dll.config
+F:\技术项目\HYJH\HYJHWeb\bin\HYJHWeb.dll
+F:\技术项目\HYJH\HYJHWeb\bin\HYJHWeb.pdb
+F:\技术项目\HYJH\HYJHWeb\obj\Debug\HYJHWeb.csprojResolveAssemblyReference.cache
+F:\技术项目\HYJH\HYJHWeb\obj\Debug\HYJHWeb.dll
+F:\技术项目\HYJH\HYJHWeb\obj\Debug\HYJHWeb.pdb
+F:\技术项目\HYJH\HYJHWeb\bin\HYJHLibrary.dll
+F:\技术项目\HYJH\HYJHWeb\bin\HYJHLibrary.pdb

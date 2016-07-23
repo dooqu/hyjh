@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\wwwroot</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="api/APICreateCustom.ashx">
+      <publishTime>06/13/2016 10:55:13</publishTime>
+    </File>
+    <File Include="api/APICreateHouseInfo.ashx">
+      <publishTime>06/13/2016 11:00:08</publishTime>
+    </File>
+    <File Include="api/APICustomList.ashx">
+      <publishTime>06/13/2016 10:56:45</publishTime>
+    </File>
+    <File Include="api/APIDeleteHouseInfo.ashx">
+      <publishTime>06/18/2016 17:51:32</publishTime>
+    </File>
+    <File Include="api/APIDeletePicture.ashx">
+      <publishTime>06/13/2016 11:00:00</publishTime>
+    </File>
+    <File Include="api/APIGetHouseInfo.ashx">
+      <publishTime>06/13/2016 10:58:58</publishTime>
+    </File>
+    <File Include="api/APIGetVisitList.ashx">
+      <publishTime>06/23/2016 10:00:21</publishTime>
+    </File>
+    <File Include="api/APIHouseList.ashx">
+      <publishTime>06/13/2016 10:57:33</publishTime>
+    </File>
+    <File Include="api/APILogin.ashx">
+      <publishTime>06/13/2016 10:58:20</publishTime>
+    </File>
+    <File Include="api/APIRecvUploadImage.ashx">
+      <publishTime>06/13/2016 10:54:37</publishTime>
+    </File>
+    <File Include="api/APIUpdateHouseInfo.ashx">
+      <publishTime>06/13/2016 10:53:49</publishTime>
+    </File>
+    <File Include="api/APIUpdateUserPassword.ashx">
+      <publishTime>06/21/2016 20:46:04</publishTime>
+    </File>
+    <File Include="api/APIVisitHouseInfo.ashx">
+      <publishTime>07/02/2016 14:58:12</publishTime>
+    </File>
+    <File Include="api/createCustom.ashx">
+      <publishTime>06/10/2016 22:44:33</publishTime>
+    </File>
+    <File Include="api/createHouseInfo.ashx">
+      <publishTime>06/10/2016 22:49:15</publishTime>
+    </File>
+    <File Include="api/customs.ashx">
+      <publishTime>06/10/2016 22:49:16</publishTime>
+    </File>
+    <File Include="api/deletePicture.ashx">
+      <publishTime>06/10/2016 22:49:16</publishTime>
+    </File>
+    <File Include="api/detail.ashx">
+      <publishTime>06/10/2016 22:49:15</publishTime>
+    </File>
+    <File Include="api/getSelectDataList.ashx">
+      <publishTime>06/10/2016 22:49:16</publishTime>
+    </File>
+    <File Include="api/getTicket.ashx">
+      <publishTime>06/10/2016 22:49:15</publishTime>
+    </File>
+    <File Include="api/houses.ashx">
+      <publishTime>06/10/2016 23:14:32</publishTime>
+    </File>
+    <File Include="api/loginHandler.ashx">
+      <publishTime>06/10/2016 22:49:15</publishTime>
+    </File>
+    <File Include="api/recvUploadPicture.ashx">
+      <publishTime>06/10/2016 22:49:15</publishTime>
+    </File>
+    <File Include="api/saveHouseInfo.ashx">
+      <publishTime>06/10/2016 22:49:16</publishTime>
+    </File>
+    <File Include="bin/HuaYuanJiaHe.dll">
+      <publishTime>05/27/2016 14:01:22</publishTime>
+    </File>
+    <File Include="bin/HYJHLibrary.dll">
+      <publishTime>07/23/2016 14:40:59</publishTime>
+    </File>
+    <File Include="bin/HYJHWeb.dll">
+      <publishTime>07/23/2016 14:40:59</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/14/2016 21:30:02</publishTime>
+    </File>
+    <File Include="customCreate.aspx">
+      <publishTime>07/17/2016 15:48:26</publishTime>
+    </File>
+    <File Include="customEdit.aspx">
+      <publishTime>07/17/2016 15:52:48</publishTime>
+    </File>
+    <File Include="customList.aspx">
+      <publishTime>07/17/2016 15:56:30</publishTime>
+    </File>
+    <File Include="DepartmentManager.aspx">
+      <publishTime>06/11/2016 08:26:35</publishTime>
+    </File>
+    <File Include="detail.aspx">
+      <publishTime>07/17/2016 14:00:05</publishTime>
+    </File>
+    <File Include="doEditOrDelete.aspx">
+      <publishTime>06/10/2016 22:49:15</publishTime>
+    </File>
+    <File Include="getHouseInfo.aspx">
+      <publishTime>06/13/2016 14:18:54</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>06/10/2016 22:49:15</publishTime>
+    </File>
+    <File Include="houseCreate.aspx">
+      <publishTime>07/17/2016 14:30:36</publishTime>
+    </File>
+    <File Include="houseEdit.aspx">
+      <publishTime>07/17/2016 14:20:23</publishTime>
+    </File>
+    <File Include="houses.ashx">
+      <publishTime>05/28/2016 09:59:32</publishTime>
+    </File>
+    <File Include="index.aspx">
+      <publishTime>07/16/2016 16:15:15</publishTime>
+    </File>
+    <File Include="login.aspx">
+      <publishTime>06/10/2016 22:49:15</publishTime>
+    </File>
+    <File Include="loginHandler.ashx">
+      <publishTime>05/28/2016 09:59:33</publishTime>
+    </File>
+    <File Include="logoff.aspx">
+      <publishTime>06/10/2016 22:49:15</publishTime>
+    </File>
+    <File Include="noinfo.jpg">
+      <publishTime>04/15/2016 14:07:04</publishTime>
+    </File>
+    <File Include="recvUploadFile.aspx">
+      <publishTime>06/10/2016 22:49:16</publishTime>
+    </File>
+    <File Include="roleManager.aspx">
+      <publishTime>06/11/2016 08:21:25</publishTime>
+    </File>
+    <File Include="test.aspx">
+      <publishTime>06/25/2016 15:04:51</publishTime>
+    </File>
+    <File Include="userManager.aspx">
+      <publishTime>06/11/2016 08:21:42</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/02/2016 19:07:45</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
